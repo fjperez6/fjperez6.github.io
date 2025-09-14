@@ -4,11 +4,11 @@
 title: Home
 layout: home
 ---
-Welcome to my page. I am a data scientist working in causal inference and health tech. I help evaluate the effectiveness of health system programs, this work is at the core of our evidence-based policy efforts. The goal is to measure program performance to inform their development and drive improvements. 
+Welcome to my page. I am a data scientist working in healthcare using causal inference and machine learning to develop health tech solutions. I help evaluate the effectiveness of health system programs, this work is at the core of our evidence-based policy efforts. 
 
-The theme of this blog is to explore how to operationalize widely used empirical tools from economics and machine learning to implement and support health policy initiatives.
+My primary areas of focus are:
+- Implementing impact evaluations to find causal links that isolate and measure effects that can be attributed to an intervention. The goal is to inform program development and drive improvements. 
+- Designing planned experimentations of ongoing interventions to sequentially develop knowledge, test outcomes, and measure their impact to achieve positive and evidence-based improvements.
+- Developing communication strategies that translate study findings into actionable insights for policy development, stakeholder engagement, and coalition-building.  
 
-I am currently working on three areas of focus:
-- Implementing impact evaluations that establish causal links to isolate and measure the effects that can be attributed to an intervention.
-- Developing planned experimentation through the Plan-Do-Study-Act (PDSA) approach to sequentially develop knowledge, rigorously testing service improvements and empirically measuring their impact to achieve positive, evidence-based outcomes.
-- Developing communication strategies that translate project findings into actionable insights for policy development, stakeholder engagement, and coalition-building.  
+The theme of this blog is to exploring and operationalizing up-to-date empirical tools from economics and machine learning to implement and support health policy initiatives.
