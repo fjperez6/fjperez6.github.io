@@ -21,7 +21,7 @@
 title: Francisco Pérez
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My blog for data science, causal inference, machine learning, ai and health tech and policy.
+  My blog for data science, causal inference, machine learning, ai and health tech
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
