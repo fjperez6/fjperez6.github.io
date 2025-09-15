@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Impact Assessments - matching pt. 2"
-date:   2025-09-14
+date:   2025-09-13
 categories: impact assessments
 ---
 This is the second post in the series about impact assessments (IA). Here we will discuss how incorporating matching as part of an impact assessment can produce more robust outcomes and enhance the estimation of the effect. We use one-to-one exact matching which produces the simplest and most intuitive outcomes to interpret.
 
 Statistical matching is a data preprocessing technique that makes treatment and control groups more comparable, mimicking a randomized study. I use the MatchIt package, which helps produce more robust results that depend less on specific modeling assumptions.
 
-### Working Within the Context of Prior Research
+### Prior Research
 
 In this example we will walk through the matching process on a dataset of synthetic IDs and visit data to show how to format and prepare the data for use with the program. We then interpret and evaluate the outcomes with the tools included in the package. The steps are based on a report by the Center for Health Policy Research (CHPR) at UCLA that provides a very comprehensive evaluation of the Whole Person Care pilot.
 
