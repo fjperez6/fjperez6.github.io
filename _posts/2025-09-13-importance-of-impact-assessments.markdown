@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Importance of Impact Assessments pt. 1"
-date:   2025-09-13 20:09:05 -0700
+date:   2025-09-13
 categories: impact assessments
 ---
 This is the first in a series of posts dedicated to impact assessments (IA). We will examine the importance of robust evaluation methods, detail the steps involved, and identify tools that help with the implementation. We will also review and interpret results to help maximize outcomes.
