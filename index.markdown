@@ -4,11 +4,11 @@
 title: Home
 layout: home
 ---
-Welcome to my page. I am a data scientist working in healthcare. In my day-to-day I use causal inference and machine learning methods to develop health tech solutions focused on evaluating the effectiveness of health system programs and policy development. This work is at the core of our evidence-based policy efforts. 
+Hello. I am a data scientist working in healthcare. In my day-to-day I use causal inference and machine learning methods to develop health tech solutions focused on development and evaluation of health system programs and their interventions. This work is foundational for evidence-based policy efforts.
 
 My primary areas of focus are:
-- Implementing impact evaluations to find causal links in order to isolate and measure effects that can be attributed to specific interventions. The goal is to inform program development and drive better health outcomes. 
-- Designing planned experimentations for ongoing interventions to sequentially develop knowledge, test outcomes, and measure their impact to achieve positive and evidence-based improvements.
-- Developing communication strategies that translate study findings into actionable insights for policy development, stakeholder engagement, and coalition-building.  
+- Implementing impact evaluations to find causal links, allowing us to isolate and measure effects that are attributable to specific interventions. The goal is to inform program development and drive improvements in health outcomes. 
+- Designing planned experimentations for ongoing interventions to continously develop knowledge, test outcomes, and measure impact and ensure evidence-based improvements.
+- Developing communication strategies that turn complex study findings into clear, actionable recommendations to inform policy, engage key stakeholders, and build collaborative partnerships.  
 
 The purpose of this blog is to explore advanced tools from economics and machine learning to support and operationalize effective health policy initiatives.

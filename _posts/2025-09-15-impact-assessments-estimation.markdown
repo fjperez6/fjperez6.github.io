@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Impact Assessments - estimation pt. 3"
+title:  "Impact Assessments pt. 3 - Estimation"
 date:   2025-09-14
 categories: impact assessments
 ---

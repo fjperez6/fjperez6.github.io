@@ -1,20 +1,22 @@
 ---
 layout: post
-title:  "Impact Assessments - matching pt. 2"
+title:  "Impact Assessments pt. 2 - Matching"
 date:   2025-09-13
 categories: impact assessments
 ---
-This is the second post in the series about impact assessments (IA). Here we will discuss how incorporating matching as part of an impact assessment can produce more robust outcomes and enhance the estimation of the effect. We use one-to-one exact matching which produces the simplest and most intuitive outcomes to interpret.
+This is the second post in the series about impact assessments (IA). Here we will discuss how incorporating matching as part of an impact assessment can produce more robust outcomes that enhance the estimation of the effect and reduce the dependence on specific modeling assumptions. In this post we will walk through the matching process using a one-to-one exact matching scheme on a dataset of synthetic IDs and historical visits. This produces the simplest and most intuitive outcomes to interpret and evaluate making it a great place to start our IA.
 
-Statistical matching is a data preprocessing technique that makes treatment and control groups more comparable, mimicking a randomized study. I use the MatchIt package, which helps produce more robust results that depend less on specific modeling assumptions.
+Statistical matching is a data pre-processing technique that makes treatment and control groups more comparable, mimicking a randomized study. The [MatchIt](https://kosukeimai.github.io/MatchIt/) package helps with this. It is easy to use and has great built-in evaluation functions.
 
 ### Prior Research
 
-In this example we will walk through the matching process on a dataset of synthetic IDs and visit data to show how to format and prepare the data for use with the program. We then interpret and evaluate the outcomes with the tools included in the package. The steps are based on a report by the Center for Health Policy Research (CHPR) at UCLA that provides a very comprehensive evaluation of the Whole Person Care pilot.
+The steps are based on a report by the Center for Health Policy Research (CHPR) at UCLA that provides a very comprehensive evaluation of the Whole Person Care pilot. In their report, CHPR provides a detailed list of the pre-treatment covariates they used in selecting the control group for the evaluation. This list is a great starting point for inclusion in any health policy evaluation because it contains many of the variables that can be confounders in health plan interventions. 
 
-In their report, CHPR provides a detailed list of the pre-treatment covariates they used in selecting the control group for the evaluation. I find this list to be a great starting point for inclusion in any health policy evaluation because it lists many of the variables that can be confounders in health plan interventions. ![table of sample variables](/assets/table-sample-variables.png)
+![table of sample variables](/assets/table-sample-variables.png)
 
-Most of the static covariates are straightforward to collect such as the demographics and health status indicators. On the other hand, those that vary based on the enrollment date, such as pre-treatment visits, require a bit more work to collect. Additionally, because most programs don’t have a single enrollment date for enrollees, we must deal with the challenge of variation in treatment timing or rolling enrollment. This means that for treated individuals we use a fixed time period immediately prior to the enrollment date to collect the pre-treatment covariates. And for the potential matches, we calculate pre-treatment covariates for every individual at every time interval in the study period. In the following sections I detail how this plays out in a simulated application. This includes getting the necessary data for the enrollment group as well as for the potential match pool from which we will select a control group. 
+Most of the static covariates are straightforward to collect such as the demographics and health status indicators. The ones that require a bit more work to prepare are those that vary based on the enrollment date, such as pre-treatment visits. Because most programs don’t have a single enrollment date for enrollees, we must deal with the challenge of variation in treatment timing AKA rolling enrollment. In this post we will walk through a helpful technique I use in these situations. 
+
+For treated individuals we use a fixed time period immediately prior to the enrollment date to collect the pre-treatment covariates. And for the potential matches, we calculate pre-treatment covariates at every time interval in the study period. In the following sections I detail how this plays out on a simulated dataset that includes getting the necessary data for the enrollment group as well as for the potential match pool used in selecting a control group. 
 
 ### Simulated Datasets - Enrollees
 
